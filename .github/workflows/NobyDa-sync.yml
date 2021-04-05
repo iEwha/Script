@@ -1,0 +1,22 @@
+name: 同步NobyDa仓库
+# File: .github/workflows/NobyDa-sync.yml
+
+on:
+  schedule:
+  - cron:  "2 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: NobyDa-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: "https://${access_token}@github.com/NobyDa/Script.git"
+        source_branch: "master"
+        destination_branch: "master"
+        github_token: ${{ secrets.PAT }}
