@@ -3,7 +3,7 @@ name: 同步NobyDa仓库
 
 on:
   schedule:
-  - cron:  "2 */12 * * *"
+  - cron:  "5 */12 * * *"
   workflow_dispatch:
 
 jobs:
