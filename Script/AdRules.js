@@ -7,21 +7,6 @@ const fs = require('fs-extra')
 
 const distDir = join(__dirname, '../../Ruleset/AdRules')
 const configurations = [{
-    name: 'Adaway',
-    homepage: 'https://adaway.org',
-    sources: [{
-        source: 'https://adaway.org/hosts.txt',
-        type: 'hosts',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Compress',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
     name: 'neohosts',
     homepage: 'https://github.com/neoFelhz/neohosts',
     sources: [{
