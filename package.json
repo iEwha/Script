@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "update-adrules": "node Script/Tools/AdRules"
+    "update-adrules": "node Script/AdRules"
   },
   "repository": "https://github.com/iEwha/Script.git",
   "author": "iEwha",
