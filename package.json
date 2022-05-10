@@ -16,5 +16,5 @@
     "axios": "^0.27.2",
     "better-ajv-errors": "^1.2.0",
     "jsonpointer": "^5.0.0"
-  }
+}
 }
